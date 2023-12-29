@@ -7,7 +7,7 @@ import utilities.configReader;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
@@ -16,11 +16,11 @@ import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
 
-public class hooksForDS {
+public class hooksForDS extends baseClassForDriver {
 
 		private static baseClassForDriver bs;
 		static Scenario scenario;
-		private static WebDriver driver;
+		//private static WebDriver driver;
 
 		@BeforeAll
 		public static void before() throws Throwable {

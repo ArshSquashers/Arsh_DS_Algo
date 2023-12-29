@@ -1,5 +1,6 @@
 package stepdefinition;
 
+import static org.testng.Assert.assertEquals;
 //import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNotEquals;
 
@@ -174,7 +175,20 @@ public class registerPageSD {
 	    LoggerLoad.info("It should display an error message as Username already exists");
 	}
 
-
-
+	@Then("It should display error message as {string}")
+	public void it_should_display_error_message_as(String expErrMsg) {
+		try {
+			String msg=regPg.readErrorMsg();
+		assertEquals(msg, expErrMsg);
+		System.out.println(expErrMsg);
+		System.out.println(msg);
+		}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    LoggerLoad.info("It displays and Error Message");
+		
+	}
 
 }

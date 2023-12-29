@@ -43,7 +43,7 @@ Feature: Validating Register page
     When The user clicks "Register" button after entering valid "username" and different passwords in "password" and "password confirmation" fields
       | username       | password     | confirm password |
       | numpyarshsquashers@gmail.com | ThankGmail | ThankGmail123 |
-    Then It should display an error message "password_mismatch:The two password fields didn’t match."
+    Then It should display an error message "password_mismatch: The two password fields didn’t match."
 
   @TS_register_07
   Scenario: The user is presented with error message for password with characters less than eight
@@ -91,6 +91,6 @@ Feature: Validating Register page
     When The user enters a valid existing "username" with "password" and "password confirmation"
       | username       | password  | confirm password |
       | numpyarshsquashers@gmail.com | ThankGmail123 | ThankGmail123 |
-    Then It should display an error message "Username already exists"
+    Then It should display error message as "Username already exists"
 
   
