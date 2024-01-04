@@ -95,24 +95,4 @@ public class configReader {
 			throw new RuntimeException("tryeditorurl not specified in the Configuration.properties file.");
 	}
 	
-//	// LinkedList config reader
-//	
-//	public static String getLinkListUrl() {
-//		String linklist=prop.getProperty("LinkedListpage");
-//		if(linklist!=null)
-//			return linklist;
-//		else
-//			throw new RuntimeException("url not specified in the config.properties file.");
-//	}
-//	
-//	//Graph Module Configuration reader
-//	
-//	public static String getGraphUrl() {
-//		String graphurl = prop.getProperty("graphurl");
-//		if (graphurl != null)
-//			return graphurl;
-//		else
-//			throw new RuntimeException("graph url is not specified in the config.properties file.");
-//	}
-
 }

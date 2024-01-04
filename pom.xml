@@ -13,7 +13,7 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.15.0</version>
+    <version>4.16.1</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
@@ -37,6 +37,13 @@
     <version>7.14.0</version>
 </dependency>
 
+<dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-jvm</artifactId>
+<version>7.14.0</version>
+<type>pom</type>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -45,12 +52,12 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-<dependency>
+ <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-junit</artifactId>
     <version>7.14.0</version>
     <scope>test</scope>
-</dependency>
+</dependency> 
 
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
@@ -74,13 +81,20 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
+ <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.8.0</version>
     <scope>test</scope>
-</dependency>
+</dependency> 
 
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
 
 <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
 <dependency>
@@ -110,6 +124,13 @@
     <artifactId>extentreports-cucumber7-adapter</artifactId>
     <version>1.14.0</version>
 </dependency>
+
+<!-- <dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-api</artifactId>
+<version>5.8.2</version>
+<scope>test</scope>
+</dependency> -->
 
 </dependencies>
 <build>
